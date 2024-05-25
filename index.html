@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakti Processor | Home</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/07c5c36803.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+        #nav-img {
+            width: 150px;
+            margin-left: 50px;
+            animation: animate6 6s;
+        }
+
+        @keyframes animate6 {
+            from {
+                margin-left: -4000px;
+            }
+
+            to {
+                margin-left: 50px;
+            }
+        }
+
+        header {
+            background-image: url(img/02.jpg);
+            width: 101%;
+            min-height: 700px;
+            margin-left: -7.9px;
+            margin-top: -7.9px;
+            margin-right: -7.9px;
+        }
+
+        nav {
+            padding-bottom: 30px;
+        }
+
+        .dropdownbtn {
+            background-color: #0068b5;
+            -webkit-text-stroke: 0.2px black;
+            color: white;
+            padding: 7px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: transform 3s, border-radius 5s, box-shadow 4s, background-color 6s;
+        }
+
+        .dropdownbtn:hover {
+            transform: scale(1.2);
+            border-radius: 7px;
+            box-shadow: 0 0 5px,
+                0 0 10px #09b50081, 0 0 20px #09b50081,
+                0 0 20px #09b50081, 0 0 40px #09b50081;
+            background-color: #ff000045;
+        }
+
+
+        .dropdownbtn1 {
+            background-color: #0068b5;
+            -webkit-text-stroke: 0.2px black;
+            color: white;
+            padding: 7px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: transform 3s, border-radius 5s, box-shadow 4s, background-color 6s;
+        }
+
+        .dropdownbtn1:hover {
+            transform: scale(1.2);
+            border-radius: 7px;
+            box-shadow: 0 0 5px,
+                0 0 10px #09b50081, 0 0 20px #09b50081,
+                0 0 20px #09b50081, 0 0 40px #09b50081;
+            background-color: #ff000045;
+        }
+
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-contant1 {
+            display: none;
+            position: absolute;
+            background: linear-gradient(to top left, #fe7f2d, #696eff);
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 0.2);
+            z-index: 1;
+            margin-top: 3px;
+            margin-left: -2px;
+            border-radius: 7px;
+        }
+
+        .dropdown-contant1 a {
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-contant1 a:hover {
+            background: linear-gradient(to bottom right, #e0ff4f, #00ffff);
+        }
+
+        .dropdown1:hover .dropdown-contant1 {
+            display: block;
+        }
+
+        .dropdown-contant1 a:hover {
+            color: red;
+            text-align: center;
+        }
+
+
+
+        .dropdownbtn2 {
+            background-color: #0068b5;
+            -webkit-text-stroke: 0.2px black;
+            color: white;
+            padding: 7px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: transform 3s, border-radius 5s, box-shadow 4s, background-color 6s;
+        }
+
+        .dropdownbtn2:hover {
+            transform: scale(1.2);
+            border-radius: 7px;
+            box-shadow: 0 0 5px,
+                0 0 10px #09b50081, 0 0 20px #09b50081,
+                0 0 20px #09b50081, 0 0 40px #09b50081;
+            background-color: #ff000045;
+        }
+
+        .dropdown2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-contant2 {
+            display: none;
+            position: absolute;
+            background: linear-gradient(to top left, #fe7f2d, #696eff);
+            min-width: 100px !important;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 0.2);
+            z-index: 1;
+            margin-top: 3px;
+            margin-left: -10px;
+            border-radius: 7px;
+        }
+
+        .dropdown-contant2 a {
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-contant2 a:hover {
+            background: linear-gradient(to bottom right, #e0ff4f, #00ffff);
+        }
+
+        .dropdown2:hover .dropdown-contant2 {
+            display: block;
+        }
+
+        .dropdown-contant2 a:hover {
+            color: red;
+            text-align: center;
+        }
+
+
+        .dropdownbtn3 {
+            background-color: #0068b5;
+            -webkit-text-stroke: 0.2px black;
+            color: white;
+            padding: 7px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: transform 3s, border-radius 5s, box-shadow 4s, background-color 6s;
+        }
+
+        .dropdownbtn3:hover {
+            transform: scale(1.2);
+            border-radius: 7px;
+            box-shadow: 0 0 5px,
+                0 0 10px #09b50081, 0 0 20px #09b50081,
+                0 0 20px #09b50081, 0 0 40px #09b50081;
+            background-color: #ff000045;
+        }
+
+        .dropdown3 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-contant3 {
+            display: none;
+            position: absolute;
+            background: linear-gradient(to top left, #fe7f2d, #696eff);
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 0.2);
+            z-index: 1;
+            margin-top: 3px;
+            margin-left: -15px;
+            border-radius: 7px;
+        }
+
+        .dropdown-contant3 a {
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-contant3 a:hover {
+            background: linear-gradient(to bottom right, #e0ff4f, #00ffff);
+        }
+
+        .dropdown3:hover .dropdown-contant3 {
+            display: block;
+        }
+
+        .dropdown-contant3 a:hover {
+            color: red;
+            text-align: center;
+        }
+
+
+
+        .dropdownbtn4 {
+            background-color: #0068b5;
+            -webkit-text-stroke: 0.2px black;
+            color: white;
+            padding: 7px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: transform 3s, border-radius 5s, box-shadow 4s, background-color 6s;
+        }
+
+        .dropdownbtn4:hover {
+            transform: scale(1.2);
+            border-radius: 7px;
+            box-shadow: 0 0 5px,
+                0 0 10px #09b50081, 0 0 20px #09b50081,
+                0 0 20px #09b50081, 0 0 40px #09b50081;
+            background-color: #ff000045;
+        }
+
+        #div1 {
+            position: relative;
+            margin-top: -44px;
+            margin-left: 300px;
+            animation: animate1 8s;
+        }
+
+        @keyframes animate1 {
+            from {
+                margin-left: -5000px;
+            }
+
+            to {
+                margin-left: 300px;
+            }
+        }
+
+        #div2 {
+            position: relative;
+            margin-top: -32.5px;
+            margin-left: 500px;
+            animation: animate2 10s;
+        }
+
+        @keyframes animate2 {
+            from {
+                margin-left: -6000px;
+            }
+
+            to {
+                margin-left: 500px;
+            }
+        }
+
+        #div3 {
+            position: relative;
+            margin-top: -33.1px;
+            margin-left: 710px;
+            animation: animate3 12s;
+        }
+
+        @keyframes animate3 {
+            from {
+                margin-left: -7000px;
+            }
+
+            to {
+                margin-left: 710px;
+            }
+        }
+
+        #div4 {
+            position: relative;
+            margin-top: -32.1px;
+            margin-left: 910px;
+            animation: animate4 14s;
+        }
+
+        @keyframes animate4 {
+            from {
+                margin-left: -8000px;
+            }
+
+            to {
+                margin-left: 910px;
+            }
+        }
+
+        #div5 {
+            position: relative;
+            margin-top: -31.2px;
+            margin-left: 1100px;
+            animation: animate5 16s;
+        }
+
+        @keyframes animate5 {
+            from {
+                margin-left: -9000px;
+            }
+
+            to {
+                margin-left: 1100px;
+            }
+        }
+
+        #img1 {
+            width: 350px;
+            margin-top: 230px;
+            animation: animate7 6s;
+            animation-delay: 0.1s;
+        }
+
+        @keyframes animate7 {
+            0% {
+                margin-left: -4000px;
+                margin-top: -80px;
+                position: absolute;
+                animation-delay: 6s;
+            }
+
+            50% {
+                margin-left: 0px;
+                margin-top: -80px;
+                width: 150px;
+                position: absolute;
+            }
+
+            100% {
+                width: 350px;
+                transform: scale(1);
+            }
+        }
+
+        #sect2 {
+            margin-left: -7.9px;
+            margin-right: -7.9px;
+            text-align: center;
+            animation: animation 15s infinite linear;
+        }
+
+        @keyframes animation {
+            0% {
+                background-color: rgba(202, 119, 250, 0.741);
+            }
+
+            20% {
+                background-color: #ff81b1;
+            }
+
+            40% {
+                background-color: rgba(139, 249, 174, 0.883);
+            }
+
+            60% {
+                background-color: #add7fcd2;
+            }
+
+            80% {
+                background-color: rgb(3, 254, 237);
+            }
+
+            100% {
+                background-color: #ffd84d;
+            }
+        }
+
+        #sect2 h1 {
+            color: white;
+            font-size: 4em;
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        #div7 {
+            position: relative;
+        }
+
+        #div7 h1 {
+            position: absolute;
+            padding-bottom: 30px;
+        }
+
+        #div7 h1:nth-child(1) {
+            color: transparent;
+            -webkit-text-stroke: 5px black;
+        }
+
+        #div7 h1:nth-child(2) {
+            color: white;
+            animation: animation1 5s infinite;
+        }
+
+        @keyframes animation1 {
+
+            0%,
+            100% {
+                clip-path: polygon(24% 0, 100% 0%, 100% 100%, 22% 100%, 23% 49%);
+                color: #2dfe4c;
+                text-shadow: 1.5px 1.5px 5px rgb(45, 75, 210);
+            }
+
+            50% {
+                clip-path: polygon(0% 0%, 78% 0, 77% 54%, 76% 100%, 0% 100%);
+                color: rgb(127, 232, 255);
+                text-shadow: 1.5px 1.5px 5px rgb(45, 210, 144);
+            }
+        }
+
+        #sect1 {
+            text-align: center;
+            background-color: black;
+            min-height: 300px;
+            margin-left: -7.9px;
+            margin-right: -7.9px;
+            background: linear-gradient(to top left, black, rgba(42, 42, 254, 0.951));
+        }
+
+        #sect1 h2 {
+            color: white;
+            font-size: 4em;
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        #div8 {
+            position: relative;
+        }
+
+        #div8 h2 {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 430px;
+
+        }
+
+        #div8 h2:nth-child(1) {
+            color: #bde0fe;
+            -webkit-text-stroke: 1px rgba(112, 202, 44, 0.811);
+            clip-path: polygon(0 60%, 100% 60%, 100% 0, 0 0);
+            animation: animation3 3s linear infinite;
+        }
+
+        #div8 h2:nth-child(2) {
+            color: #deaaff;
+            -webkit-text-stroke: 1px rgba(202, 44, 73, 0.811);
+            clip-path: polygon(0 58%, 100% 58%, 100% 100%, 0 100%);
+            animation: animation3 3s linear infinite;
+        }
+
+        @keyframes animation3 {
+
+            0%,
+            100% {
+                transform: scale(1.3);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        #sect3 {
+            margin-left: -7.9px;
+            margin-right: -7.9px;
+        }
+
+        #div10 h2 {
+            font-size: 30px;
+            margin-left: 30px;
+            -webkit-text-stroke: 1px #00b53677;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+        }
+
+        #icon2 {
+            font-size: 50px;
+            margin-top: -70px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+            position: absolute;
+            margin-left: 280px;
+            -webkit-text-stroke: 1px #00b53677;
+        }
+
+        #icon3 {
+            font-size: 50px;
+            margin-top: -70px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+            position: absolute;
+            margin-left: 430px;
+            -webkit-text-stroke: 1px #00b53677;
+        }
+
+        #icon4 {
+            font-size: 50px;
+            margin-top: -70px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+            -webkit-text-stroke: 1px #00b53677;
+            position: absolute;
+            margin-left: 630px;
+        }
+
+        #icon5 {
+            font-size: 50px;
+            margin-top: -70px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+            position: absolute;
+            margin-left: 820px;
+            -webkit-text-stroke: 1px #00b53677;
+        }
+
+        #icon6 {
+            font-size: 50px;
+            margin-top: -70px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+            position: absolute;
+            -webkit-text-stroke: 1px #00b53677;
+            margin-left: 990px;
+        }
+
+        #icon7 {
+            font-size: 50px;
+            margin-top: -70px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.556);
+            position: absolute;
+            -webkit-text-stroke: 1px #00b53677;
+            margin-left: 1157px;
+        }
+
+        #extra1 {
+            position: absolute;
+            font-size: 20px;
+            color: #0078b9;
+            -webkit-text-stroke: 0.2px red;
+            text-shadow: 2px 2px 2px skyblue;
+            margin-top: 2px;
+            margin-left: 265px;
+        }
+
+        #extra2 {
+            position: absolute;
+            font-size: 20px;
+            color: #0078b9;
+            -webkit-text-stroke: 0.2px red;
+            text-shadow: 2px 2px 2px skyblue;
+            margin-top: 2px;
+            margin-left: 415px;
+        }
+
+        #extra3 {
+            position: absolute;
+            font-size: 20px;
+            color: #0078b9;
+            -webkit-text-stroke: 0.2px red;
+            text-shadow: 2px 2px 2px skyblue;
+            margin-top: 2px;
+            margin-left: 590px;
+        }
+
+        #extra4 {
+            position: absolute;
+            font-size: 20px;
+            color: #0078b9;
+            -webkit-text-stroke: 0.2px red;
+            text-shadow: 2px 2px 2px skyblue;
+            margin-top: 2px;
+            margin-left: 805px;
+        }
+
+        #extra5 {
+            position: absolute;
+            font-size: 20px;
+            color: #0078b9;
+            -webkit-text-stroke: 0.2px red;
+            text-shadow: 2px 2px 2px skyblue;
+            margin-top: 2px;
+            margin-left: 995px;
+        }
+
+        #extra6 {
+            position: absolute;
+            font-size: 20px;
+            color: #0078b9;
+            -webkit-text-stroke: 0.2px red;
+            text-shadow: 2px 2px 2px skyblue;
+            margin-top: 2px;
+            margin-left: 1140px;
+        }
+
+        #sect4 {
+            margin-left: -7.9px;
+            margin-right: -7.9px;
+            background-color: #E6E6E6;
+        }
+
+        #div12 {
+            position: absolute;
+            margin-top: -400px;
+            margin-left: 60%;
+            color: #000000;
+            font-size: 24px;
+            -webkit-text-stroke: 0.4px #0068b5;
+            text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.524);
+        }
+
+        #button1 {
+            position: absolute;
+            width: 100px;
+            padding-top: 7px;
+            position: absolute;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            padding-right: 10px;
+            border-radius: 7px;
+            border: 2px solid darkgreen;
+            cursor: pointer;
+            transform: scale(1.2);
+            color: black;
+            background-color: Limegreen;
+        }
+
+        #button2 {
+            width: 100px;
+            padding-top: 7px;
+            position: absolute;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            padding-right: 10px;
+            border-radius: 7px;
+            border: 2px solid darkgreen;
+            cursor: pointer;
+            transform: scale(1.2);
+            color: black;
+            background-color: Limegreen;
+            animation: animation4 10s infinite;
+        }
+
+        @keyframes animation4 {
+            0% {
+                clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+                background-color: #0068b5;
+                transform: scale(1.2);
+                color: white;
+                border: 2px solid black;
+                text-shadow: 2.4px 2.4px 2px black;
+                -webkit-text-stroke: 0.1px red;
+            }
+
+            50% {
+                clip-path: polygon(0% 0%, 0 0, 0 100%, 0 100%);
+                background-color: #00ffff;
+                border: 2px solid black;
+                text-shadow: 1.5px 1.5px 2px black;
+            }
+
+            100% {
+                clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+                background-color: #696eff;
+                color: red;
+                border: 2px solid black;
+                text-shadow: 1.5px 1.5px 2px rgb(15, 211, 237);
+                -webkit-text-stroke: 0.1px green;
+            }
+        }
+
+        #sect5 {
+            background-color: #000000;
+            margin-left: -7.9px;
+            margin-right: -7.9px;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        #div13 {
+            width: 48%;
+            min-height: 400px;
+            padding-top: 20px;
+            background-color: #7902aa;
+            text-align: center;
+        }
+
+        #icon8 {
+            color: white;
+            font-size: 110px;
+            -webkit-text-stroke: 2px darkblue;
+            text-shadow: 1.5px 1.5px 3px red;
+            margin-top: 20px;
+        }
+
+        #heading1 {
+            font-size: 30px;
+            color: white;
+            text-shadow: 1.5px 1.5px 3px red;
+        }
+
+        #para1 {
+            color: white;
+            -webkit-text-stroke: 0.2px lightgreen;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        #span1 {
+            margin-left: -395px;
+        }
+
+        #div14 {
+            width: 48%;
+            min-height: 400px;
+            padding-top: 20px;
+            background-color: #696eff;
+            text-align: center;
+        }
+
+        #button3 {
+            margin-left: -430px;
+            padding: 10px 16px;
+            border-radius: 20px;
+            border: 2px solid darkgreen;
+            background-color: lightgreen;
+            color: black;
+            transition: box-shadow 1s, color 2s, cursor 2s;
+        }
+
+        #button3:hover {
+            box-shadow: inset 0 0 0 20px #D80286;
+            color: white;
+            cursor: pointer;
+        }
+
+        #icon9 {
+            color: white;
+            font-size: 110px;
+            -webkit-text-stroke: 2px darkblue;
+            text-shadow: 1.5px 1.5px 3px red;
+            margin-top: 20px;
+        }
+
+        #heading2 {
+            font-size: 30px;
+            color: white;
+            text-shadow: 1px 1px 2.5px red;
+        }
+
+        #para2 {
+            color: white;
+            -webkit-text-stroke: 0.2px lightgreen;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        #span2 {
+            margin-left: -170px;
+        }
+
+        #button4 {
+            margin-left: -420px;
+            padding: 10px 16px;
+            border-radius: 20px;
+            border: 2px solid darkgreen;
+            background-color: lightgreen;
+            color: black;
+            transition: box-shadow 1s, color 2s, cursor 2s;
+        }
+
+        #button4:hover {
+            box-shadow: inset 0 0 0 20px #D80286;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-left: -7.9px;
+            margin-right: -7.9px;
+        }
+
+        footer li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <br>
+            <img src="img/01.png" id="nav-img">
+            <div id="div1">
+                <div class="dropdown">
+                    <button class="dropdownbtn">Home</button>
+                </div>
+            </div>
+            <div id="div2">
+                <div class="dropdown1">
+                    <button class="dropdownbtn1">Processors</button>
+                    <div class="dropdown-contant1">
+                        <a href="#">E-class</a>
+                        <a href="#">C-class</a>
+                        <a href="#">Shakti soC</a>
+                        <hr width="50%">
+                        <a href="#">Tape Out</a>
+                    </div>
+                </div>
+            </div>
+            <div id="div3">
+                <div class="dropdown2">
+                    <button class="dropdownbtn2">Software</button>
+                    <div class="dropdown-contant2">
+                        <a href="#">SHAKTI-SDK</a>
+                        <a href="#">Documents</a>
+                        <a href="#">Learn with Shakti</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div4">
+                <div class="dropdown3">
+                    <button class="dropdownbtn3">Events</button>
+                    <div class="dropdown-contant3">
+                        <a href="#">per-Week</a>
+                        <a href="#">challenge</a>
+                        <a href="#">Workshop</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div5">
+                <div class="dropdown4">
+                    <button class="dropdownbtn4">Jobs</button>
+                    <div class="dropdown-contant4"></div>
+                </div>
+            </div>
+        </nav>
+        <div id="div6">
+            <img src="img/01.png" id="img1">
+        </div>
+    </header>
+    <main>
+        <br><br><br>
+        <section id="sect1">
+            <div id="div8">
+                <h2>Shakti Procceser</h2>
+                <h2>Shakti Procceser</h2>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br>
+        <section id="sect5">
+            <br>
+            <div id="div13">
+                <i class="fa-solid fa-hand-fist fa-beat-fade" id="icon8"></i><br>
+                <h1 id="heading1">Motivation</h1>
+                <p id="para1">
+                    An open source processor ecosystem to boost customization, <br>
+                    collaboration between academia and industry to provide inn- <br>
+                    ovative, customized solutions without the hassles of royalt- <br>
+                    <span id="span1">ies and NDA.</span><br><br>
+                    <button id="button3">Learn More</button>
+                </p>
+            </div>
+            <div id="div14">
+                <i class="fa-solid fa-terminal fa-beat-fade" id="icon9"></i>
+                <h1 id="heading2">Shakti-Program</h1>
+                <p id="para2">
+                    The SHAKTI Processor Program, was started as an academic <br>
+                    initiative back in 2014 by the RISE group at IIT-Madras.So-<br>
+                    rce code of all the components of the SHAKTI ecosystem <br>
+                    <span id="span2">are open under the 3 part BSD license.</span><br><br>
+                    <button id="button4">Learn More</button>
+                </p>
+            </div>
+            <br>
+        </section>
+        <br><br><br><br><br>
+        <section id="sect2">
+            <br><br><br><br>
+            <div id="div7">
+                <h1>It Is The Diagram Of Shakti Proccesers</h1>
+                <h1>It Is The Diagram Of Shakti Proccesers</h1>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <br><br><br><br>
+            <img src="img/04.png" width="99%">
+            <br><br>
+        </section>
+        <br><br><br><br><br>
+        <section id="sect3">
+            <div id="div10">
+                <h2>Quick Start : </h2>
+                <i class="fa-solid fa-person-walking-arrow-right fa-fade" id="icon2"></i>
+                <i class="fa-regular fa-object-ungroup fa-fade" id="icon3"></i>
+                <i class="fa-solid fa-window-restore fa-fade" id="icon4"></i>
+                <i class="fa-solid fa-satellite-dish fa-bounce" id="icon5"></i>
+                <i class="fa-solid fa-cart-shopping fa-bounce" id="icon6"></i>
+                <i class="fa-solid fa-message fa-flip" id="icon7"></i>
+            </div>
+            <div id="div9">
+                <z id="extra1">Careers</z>
+                <z id="extra2">Design tools</z>
+                <z id="extra3">Development tools</z>
+                <z id="extra4">Community</z>
+                <z id="extra5">eStore</z>
+                <z id="extra6">Contact Us</z>
+            </div>
+            <br><br>
+        </section>
+        <br><br><br><br><br>
+        <section id="sect4">
+            <br><br>
+            <div id="div11">
+                <img src="img/05.png" height="550px" width="49%">
+            </div>
+            <div id="div12">
+                <h1 style="font-size: 24px;">Business Inkjet Printers</h1>
+                Shakti inkjet printers and all-in-ones are <br>
+                eco-friendly, deliver amazing quality, <br>
+                blazing-fast speeds and exceptional <br>
+                reliability in office. <br><br>
+                <button id="button1">Learn More</button>
+                <button id="button2">Learn More</button>
+            </div>
+            <br><br>
+        </section>
+    </main>
+    <br><br><br>
+    <footer style="background-color: rgba(145, 40, 174, 0.594);">
+        <br><br>
+        <div style="display: flex; justify-content: space-around; line-height: 2;">
+            <ul style="list-style: none;">
+                <li style="color: rgba(0, 0, 0, 0.868);">Investor</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Download Library</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Request Information</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">FAQs</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Email Alerts</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">RSS</li>
+            </ul>
+            <ul style="list-style: none;">
+                <li style="color: rgba(0, 0, 0, 0.868);">Stock Info</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Stock Quote</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Investment Calculator</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Fundamental</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Analyst Coverage</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Desktop PC</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">PC Peripherals</li>
+            </ul>
+            <ul style="list-style: none;">
+                <li style="color: rgba(0, 0, 0, 0.868);">Quick Links</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Email</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">RSS</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Request Printed Materials</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Download Library</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Advance Cooling</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">ARM Server</li>
+            </ul>
+            <ul style="list-style: none;">
+                <li style="color: rgba(0, 0, 0, 0.868);">Resource</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Insight</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Success Case</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Awards</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">News</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Events</li>
+                <li style="color: rgba(0, 0, 0, 0.463);"></li>
+            </ul>
+            <ul style="list-style: none;">
+                <li style="color: rgba(0, 0, 0, 0.868);">Solution</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Application Solutions</li>
+                <li style="color: rgba(0, 0, 0, 0.463);">Industry Solutions</li>
+                <li style="color: rgba(0, 0, 0, 0.463);"></li>
+                <li style="color: rgba(0, 0, 0, 0.463);"></li>
+                <li style="color: rgba(0, 0, 0, 0.463);"></li>
+                <li style="color: rgba(0, 0, 0, 0.463);"></li>
+                <li style="color: rgba(0, 0, 0, 0.463);"></li>
+            </ul>
+        </div>
+        <br>
+        <hr width="97%">
+        <h4 style="padding: 20px; text-align: end;">Created & Designed by <a href="#"
+                style="text-decoration: none; color: #025B8C;">@Raj Sagar</a></h4>
+    </footer>
+</body>
+
+</html>
